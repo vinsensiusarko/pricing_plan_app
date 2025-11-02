@@ -3,7 +3,7 @@ import 'package:pricing_plan_app/app/modules/splash/controllers/splash_controlle
 
 class AuthController extends GetxController {
   // Simpan tipe pengguna saat ini sebagai Rx agar reaktif
-  final Rx<UserType> _currentUserType = UserType.free.obs; // Default ke FREE
+  final Rx<UserType> _currentUserType = UserType.enterprise.obs; // Default ke FREE
 
   UserType get userType => _currentUserType.value;
 
